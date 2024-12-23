@@ -1,0 +1,48 @@
+.footer
+{
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    background-color:#000;
+    padding: 20px 10px;
+}
+
+h1 
+{
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+p 
+{
+    color: #fff;
+    font-size: 30px;
+    font-style: italic;
+
+}
+a 
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px ;
+    font-size: 17px;
+    position: relative;
+    top: 50%
+
+
+}
+a:hover 
+{
+    color: var(--primary-color);
+}
+i 
+{
+    padding: 0px 10px;
+}
+.taha{
+    font-family: Perpetua;
+    font-weight: 100px;
+}
+.row {
+    margin: 0 auto;
+}

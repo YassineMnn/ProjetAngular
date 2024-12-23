@@ -1,0 +1,52 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5" style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        ">The key to happiness is <br/> an TSM car.  </h1>
+        <a routerLink="menu">CHECK NOW <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<!-- step         <h1 class="mb-5">Cars are not only vehicles, <br/> but also a way of life.  </h1>
+ -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center" style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ">How to get <span class="highlight">your car</span></h1>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Select your car</p>
+            </div>
+        </div>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Test it </p>
+            </div>
+        </div>
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">fill the details</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--car  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center" style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ">Customers <span class="highlight">Favourites car</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let cr of cardata;index as i">
+            <div class="carbox" *ngIf="i<=3">
+                <img src="{{cr.carImg}}" />
+                <h1>{{cr.carName}}</h1>
+                <p>{{cr.carPrice | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>

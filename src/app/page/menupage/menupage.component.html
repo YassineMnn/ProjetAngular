@@ -1,0 +1,40 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+        <div class="col-lg-6" *ngIf="carData">
+            <h1 class="mt-3" style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: #00005C   ;">{{carData[0].carName}}</h1>
+            <br><img src="{{carData[0].carImg}}" width="100%"/>
+
+            
+            
+            <ul class="ul">
+                <br> <li> <p><b> Annee : {{carData[0].cardate}}</b></p></li>
+                <li> <p><b>Puissance : {{carData[0].carpuiss}}</b></p></li>
+                <li> <p><b>Accélération : {{carData[0].caracce}}</b></p></li>
+                <li> <p><b>Vitesse de pointe : {{carData[0].carvt}}</b></p></li>
+                <li> <p><b>Prix : {{carData[0].carPrice | currency }}</b></p></li>
+                
+            </ul>
+            <br><a routerLink="../../menu" class="btn btn-sm btn-dark mb-3 ">back</a>
+
+        </div>
+        
+
+        <div class="col-lg-6 col-12">
+            <br><h1>Enter vos informations</h1>
+            <form>
+
+                <input type="text" class="form-control" placeholder="Enter your name " /><br>
+                <input type="text" class="form-control" placeholder="Enter your phone number" /><br>
+                <textarea class="form-control" placeholder="Enter your adress mail "></textarea><br>
+                <button class="btn btn-md btn-dark mt-3">done</button>
+
+            </form>
+
+
+        </div> 
+
+
+    </div>
+
+</div>
